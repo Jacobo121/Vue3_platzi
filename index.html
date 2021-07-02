@@ -12,6 +12,7 @@
         <span p-text="message" ></span>
         <br>
         <input type="text" p-model="message">
+        <img p-bind="src:image">
     </div>
     
     <script src="./platzi.js"></script>
@@ -21,7 +22,9 @@
         const app = createApp({
             data() {
                 return {
-                    message: "s Vue"
+                    message: "s Vue",
+                    image: "https://www.manejandodatos.es/wp-content/uploads/2018/02/vueJS.png"
+
                 };
             }
         });
